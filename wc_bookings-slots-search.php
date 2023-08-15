@@ -133,7 +133,7 @@ const formattedDate = `${day}/${month}/${year}`;
 
 const fetchProductIds = async (minDate,maxDate) => {
   try {
-    const fetchUrl = `https://www.midlandsrollerarena.com/wp-json/wc-bookings/v1/products/slots/?min_date=${minDate}&max_date=${maxDate}&per_page=100`;
+    const fetchUrl = `https://www.DOMAIN.com/wp-json/wc-bookings/v1/products/slots/?min_date=${minDate}&max_date=${maxDate}&per_page=100`;
     const response = await fetch(fetchUrl);
 
     if (!response.ok) {
@@ -177,7 +177,7 @@ console.log(groupedResponse);
       let productData = null;
 
       if (1 === 1) {
-        const productUrl = `https://www.midlandsrollerarena.com/wp-json/wc-bookings/v1/products/${data.records[i].product_id}?consumer_key=KEY&consumer_secret=SECRET`;
+        const productUrl = `https://www.DOMAIN.com/wp-json/wc-bookings/v1/products/${data.records[i].product_id}?consumer_key=KEY&consumer_secret=SECRET`;
         const productResponse = await fetch(productUrl);
         productData = await productResponse.json();
       }
