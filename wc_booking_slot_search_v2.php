@@ -1,3 +1,6 @@
+<?php
+// get some php here
+?>
 <!DOCTYPE html>
 <html>
 <head>
