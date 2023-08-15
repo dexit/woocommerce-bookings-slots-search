@@ -315,7 +315,7 @@ console.log(groupedResponse);
               let productData = null;
 
               if (1 === 1) {
-                const productUrl = `https://www.midlandsrollerarena.com/wp-json/wc-bookings/v1/products/${data.records[i].product_id}?consumer_key=ck_6b29eadb5c1971dee93ee84c6ee4ea57bf7d2ff4&consumer_secret=cs_1da576dd3d757c7f3538ea94cd9fa86530b15179`;
+                const productUrl = `https://www.DOMAIN.com/wp-json/wc-bookings/v1/products/${data.records[i].product_id}?consumer_key=YOURKEY&consumer_secret=YOURSECRET`;
                 const productResponse = await fetch(productUrl);
                 productData = await productResponse.json();
               }
